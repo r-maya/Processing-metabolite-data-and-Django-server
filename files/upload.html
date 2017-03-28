@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<h1></br></h1>
+		<center><h1> Upload the file here <h1></center>
+	</body>
+</html>
+<center>
+<form method="post" enctype="multipart/form-data">
+	{% csrf_token%}
+    <input type="file" name="data_file">
+    <button type="submit">Upload</button>
+</form>
+</center>
